@@ -14,15 +14,10 @@ public void onCreate(Bundle savedInstanceState)
 {
 super.onCreate(savedInstanceState);
 setContentView(R.layout.activity_main);
-//Creating a Bitmap
 Bitmap bg = Bitmap.createBitmap(720, 1280, Bitmap.Config.ARGB_8888);
-//Setting the Bitmap as background for the ImageView
 ImageView i = (ImageView) findViewById(R.id.imageView);
 i.setBackgroundDrawable(newBitmapDrawable(bg));
-//Creating the Canvas Object
 Canvas canvas = new Canvas(bg);
-
-//Creating the Paint Object and set its color & TextSize
 Paint paint = new Paint();
 paint.setColor(Color.BLUE);
 paint.setTextSize(50);
